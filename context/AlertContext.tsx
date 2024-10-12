@@ -51,7 +51,7 @@ export const AlertProvider = ({ max, children }: AlertProviderProps) => {
     return (
         <AlertContext.Provider value={{ showAlert, clearAlertStack }}>
             {alerts.length > 0 && (
-                <div className="container pt-4 absolute z-[999999]">
+                <div className="container pt-4 fixed z-[999999]">
                     {alerts.map((alert) => (
                         <Alert
                             key={alert.id}

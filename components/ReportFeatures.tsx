@@ -31,6 +31,7 @@ export default function ReportFeatures({ data }: ReportFeaturesProps) {
                 idKey={(row) => row.date}
                 columns={columns}
                 rows={rows}
+                aria-label="Monthly Features Table"
             />
 
             <Table
@@ -47,6 +48,7 @@ export default function ReportFeatures({ data }: ReportFeaturesProps) {
                     },
                 ]}
                 rows={[data]}
+                aria-label="Features Summary Table"
             />
         </div>
     );
